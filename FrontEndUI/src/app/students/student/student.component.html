@@ -1,0 +1,49 @@
+<form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+    <input type="hidden" name="Id" #Id="ngModel" [(ngModel)]="service.formData.Id">
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <sup style="color: red;">*</sup><label>FIRST NAME</label>
+            <input name="FirstName" #FirstName="ngModel" [(ngModel)]="service.formData.FirstName" class="form-control" required>
+            <div class="validation-error" *ngIf="FirstName.invalid && FirstName.touched">Please enter your first name</div>
+        </div>
+        <div class="form-group col-md-6">
+            <sup style="color: red;">*</sup><label>LAST NAME</label>
+            <input name="LastName" #LastName="ngModel" [(ngModel)]="service.formData.LastName" class="form-control" required>
+            <div class="validation-error" *ngIf="LastName.invalid && LastName.touched">Please enter your last name</div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-7">
+            <sup style="color: red;">*</sup><label>DOB</label>
+            <input type="date" name="Date_Of_Birth" #Date_Of_Birth="ngModel" [(ngModel)]="service.formData.Date_Of_Birth" class="form-control" required>            
+            <div class="validation-error" *ngIf="Date_Of_Birth.invalid && Date_Of_Birth.touched">Please enter date of birth</div>
+        </div>
+        <div class="form-group col-md-5">
+            <sup style="color: red;">*</sup><label>GENDER</label>
+            <select style="font-weight: bold;" name="Gender" #Gender="ngModel" [(ngModel)]="service.formData.Gender" class="form-control" required>
+                <option value="">--Select Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <div class="validation-error" *ngIf="Gender.invalid && Gender.touched">Please select your gender</div>
+        </div>
+    </div>    
+    <div class="form-group">
+        <sup style="color: red;">*</sup><label>CITY</label>
+        <input name="City" #City="ngModel" [(ngModel)]="service.formData.City" class="form-control" required>
+        <div class="validation-error" *ngIf="City.invalid && City.touched">Please enter your city</div>
+    </div>
+    <div class="form-group">
+        <sup style="color: red;">*</sup><label>CONTACT NO.</label>
+        <input type="tel" name="ContactNo" #ContactNo="ngModel" [(ngModel)]="service.formData.ContactNo" class="form-control" required>
+        <div class="validation-error" *ngIf="ContactNo.invalid && ContactNo.touched">Please enter your contact number</div>
+    </div>
+    <div class="form-group">
+        <sup style="color: red;">*</sup><label>GRADE</label>
+        <input type="number" name="Grade" #Grade="ngModel" [(ngModel)]="service.formData.Grade" class="form-control" required>
+        <div class="validation-error" *ngIf="Grade.invalid && Grade.touched">Please enter a grade</div>
+    </div>
+    <div class="form-group">
+        <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block">SUBMIT</button>
+    </div>
+</form>

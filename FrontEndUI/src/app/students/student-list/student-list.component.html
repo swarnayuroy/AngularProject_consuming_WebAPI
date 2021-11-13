@@ -1,0 +1,21 @@
+<table class="table table-hover">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>DOB</th>
+        <th>Gender</th>
+        <th>City</th>
+        <th>Contact</th>
+        <th>Grade</th>
+    </tr>
+    <tr *ngFor="let student of service.studentList">
+        <td (click)="populateForm(student)">{{student.Id}}</td>
+        <td (click)="populateForm(student)">{{student.FirstName}} {{student.LastName}}</td>
+        <td (click)="populateForm(student)">{{student.Date_Of_Birth}}</td>
+        <td (click)="populateForm(student)">{{student.Gender}}</td>
+        <td (click)="populateForm(student)">{{student.City}}</td>
+        <td (click)="populateForm(student)">{{student.ContactNo}}</td>
+        <td (click)="populateForm(student)">{{student.Grade}}</td>
+        <td (click)="deleteRecord(student.Id)"><button class="btn btn-sm btn-outline-danger">X</button></td>
+    </tr>
+</table>

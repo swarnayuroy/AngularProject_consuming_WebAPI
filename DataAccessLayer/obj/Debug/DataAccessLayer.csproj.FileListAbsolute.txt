@@ -1,0 +1,13 @@
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\AutoMapper.dll
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\Domain.dll
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\Iesi.Collections.dll
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\NHibernate.dll
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\Domain.pdb
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\AutoMapper.xml
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\Iesi.Collections.xml
+F:\Project\MyDemoProject\DataAccessLayer\bin\Debug\NHibernate.xml
+F:\Project\MyDemoProject\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+F:\Project\MyDemoProject\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+F:\Project\MyDemoProject\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

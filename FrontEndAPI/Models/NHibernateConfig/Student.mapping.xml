@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true"
+assembly="DataAccessLayer" namespace="DataAccessLayer.Data">
+  <class name="StudentDTO" table="tblStudent" dynamic-update="true" >
+    <cache usage="read-write"/>
+    <id name="Id" column="Id" type="int">
+      <generator class="native" />
+    </id>
+    <property name="FirstName" />
+    <property name="LastName" />
+    <property name="Date_Of_Birth" />
+    <property name="Gender" />
+    <property name="City" />
+    <property name="ContactNo" />
+    <property name="Grade" />
+  </class>
+</hibernate-mapping>

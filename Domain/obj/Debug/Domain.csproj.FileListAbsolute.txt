@@ -1,0 +1,5 @@
+F:\Project\MyDemoProject\Domain\bin\Debug\Domain.dll
+F:\Project\MyDemoProject\Domain\bin\Debug\Domain.pdb
+F:\Project\MyDemoProject\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+F:\Project\MyDemoProject\Domain\obj\Debug\Domain.dll
+F:\Project\MyDemoProject\Domain\obj\Debug\Domain.pdb
